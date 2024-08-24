@@ -17,11 +17,11 @@ import {
 
 function NewDm() {
   const [openNewContact, setOpenNewContact] = useState(false)
-  const [searchedContacts, setSearchedContacts] = useState([])
+  // const [searchedContacts, setSearchedContacts] = useState([])
 
-  const searchContacts = async (searchTerm) => {
+  // const searchContacts = async (searchTerm) => {
 
-  }
+  // }
 
   return (
     <div>
@@ -50,12 +50,7 @@ function NewDm() {
           </DialogHeader>
           <input type="text"
                 placeholder="Search contacts"
-                className="border-b-2 text-black"
-                onChange={(e) => searchContacts(e.target.value)}></input>
-
-          {
-            searchContacts
-          }
+                className="border-b-2 text-black"></input>                
         </DialogContent>
       </Dialog>
 
